@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    
+</style>
 <body>
     <?php
-    echo $_POST['gender'];
-    echo "<br>";
     echo $_POST['voornaam'];
+    echo "<br>";
+    echo $_POST['gender'];
     echo "<br>";
     echo $_POST['achternaam'];
     echo "<br>";
