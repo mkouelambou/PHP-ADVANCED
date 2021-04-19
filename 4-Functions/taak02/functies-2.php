@@ -7,15 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    $rekenUit = ;
-    $getal1 = 4;
-    $getal2 = 2;
-    $getal3 = 9;
-   function $rekenUit(){
-       echo "Als ik de getallen .$getal1 + .$getal2 + .$getal3 optel, is de uitkomst .$rekenUit"
-   }
-   return $rekenUit;
-    ?>
+<?php
+
+function total($getal1, $getal2, $getal3 ){
+    echo "Als ik de getallen $getal1, $getal2 en $getal3 bij elkaar optel, is de uitkomst ";
+    return $getal1 + $getal2 + $getal3;
+}
+echo total(4,2,9);
+echo "<br>";
+function total2($getal4,$getal5,$getal6){
+    echo "Als ik de getallen $getal4, $getal5 en $getal6 bij elkaar optel, is de uitkomst ";
+    return $getal4 + $getal5 + $getal6;
+}
+
+echo total(1,2,3);
+
+?>
 </body>
 </html>
