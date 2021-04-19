@@ -9,14 +9,17 @@
 <body>
 
 
-    }
+    
 </body>
 </html>
 <?php
-$naam = "Mike";
+$kleur = array('red', 'blue', 'green');
 
-function schrijfkleur($naam){
-    echo "Mijn naam is $naam"; 
+function schrijfkleur($kleur,$naam){
+    
+    echo "<h1 style='color:".$kleur.";'>Mijn naam is Mike $naam</h1>";
 }
-schrijfkleur("Mike");
-?> 
+schrijfkleur($kleur[0], "red");
+schrijfkleur($kleur[1], "blue");
+schrijfkleur($kleur[2], "green");
+?>
