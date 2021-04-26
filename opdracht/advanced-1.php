@@ -7,34 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-<div class ="content"><center>
-<form action = "advaned-2.php" method = "POST">
-    <table border = "0">
-<div>
-<label for="colors">Achtergrondkleur</label>
-    <select name="colors" id="colors">
-    <option value="red">Red</option>
-    <option value="blue">Blue</option>
-    <option value="green">Green</option>
-    <option value="black">Black</option>
-    <option value="brown">Brown</option>
-</select>
-</div>
-<div>
-<label for="colors">Textkleur</label>
-    <select name="colors" id="colors">
-    <option value="red">Red</option>
-    <option value="blue">Blue</option>
-    <option value="green">Green</option>
-    <option value="black">Black</option>
-    <option value="brown">Brown</option>
-</select>
-</div>
-<?php
-    $kleuren = array("red", "blue", "green", "black", "brown")
-    foreach($kleuren as $kleur){
-        echo "<ul><li> $kleur </ul></li>";
-    }
-    ?>
+    <div class="content">
+    <form action="advanced-2.php" method="POST">
+        <ul><label for="padding">cel-dikte (px)</label>
+        <input type="number" name="padding" placeholder="cel-dikte"></ul>
+ 
+        <ul><label for="tabel">tabelrand dikte (px)</label>
+        <input type="number" name="tabel" placeholder="tabelrand dikte"></ul>
+ 
+        <ul><label for="textkleur">kies een kleur</label>
+        <select id="textkleur" name="textkleur" size="1">
+            <?php
+ 
+                $textkleur = array("red", "blue", "green", "black", "brown", "purple");
+                foreach ($textkleur as $key => $value) {
+                    echo "<option value=".$value.">$value</option>";
+                }
+            ?></select></ul>
+ 
+        <ul><label for="kleur">kies een achtergrondkleur</label>
+        <select id="kleur" name="kleur" size="1">
+            <?php
+ 
+                $kleur = array("red", "blue", "green", "black", "brown", "purple");
+                    foreach ($kleur as $key => $value) {
+                    echo "<option value=".$value.">$value</option>";
+                }
+            ?></select></ul>
+        <ul><input type="submit"></ul>
+    </div>
 </body>
 </html>
