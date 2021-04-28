@@ -19,7 +19,7 @@
         <select id="textkleur" name="textkleur" size="1">
             <?php
  
-                $textkleur = array("red", "blue", "green", "black", "brown", "purple");
+                $textkleur = array("red", "blue", "green", "black", "brown", "purple","pink","grey");
                 foreach ($textkleur as $key => $value) {
                     echo "<option value=".$value.">$value</option>";
                 }
@@ -29,7 +29,7 @@
         <select id="kleur" name="kleur" size="1">
             <?php
  
-                $kleur = array("red", "blue", "green", "black", "brown", "purple");
+                $kleur = array("red", "blue", "green", "black", "brown", "purple","pink","grey");
                     foreach ($kleur as $key => $value) {
                     echo "<option value=".$value.">$value</option>";
                 }
